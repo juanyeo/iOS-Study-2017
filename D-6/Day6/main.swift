@@ -23,3 +23,5 @@ testInterest(unitDay: 5)
 let load2 = ArrayPractice()
 load2.printArray(array: load2.tempArray(lines: 5))
 
+let load3 = plus5Array()
+load3.printArray(array: load3.tempArray(lines: 5))
