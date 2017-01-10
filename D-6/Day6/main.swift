@@ -19,3 +19,7 @@ func testInterest(unitDay : Int) {
 }
 
 testInterest(unitDay: 5)
+
+let load2 = ArrayPractice()
+load2.printArray(array: load2.tempArray(lines: 5))
+
