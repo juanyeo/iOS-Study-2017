@@ -12,6 +12,7 @@
 		C4313A141E248E3B00BBC1D7 /* ArrayPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4313A131E248E3B00BBC1D7 /* ArrayPractice.swift */; };
 		C4313A161E24A60200BBC1D7 /* fillArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4313A151E24A60200BBC1D7 /* fillArray.swift */; };
 		C4313A181E24B17100BBC1D7 /* setBoolArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4313A171E24B17100BBC1D7 /* setBoolArray.swift */; };
+		C4313A1C1E24CAC700BBC1D7 /* BusyAnt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4313A1B1E24CAC700BBC1D7 /* BusyAnt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +34,7 @@
 		C4313A131E248E3B00BBC1D7 /* ArrayPractice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayPractice.swift; sourceTree = "<group>"; };
 		C4313A151E24A60200BBC1D7 /* fillArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fillArray.swift; sourceTree = "<group>"; };
 		C4313A171E24B17100BBC1D7 /* setBoolArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = setBoolArray.swift; sourceTree = "<group>"; };
+		C4313A1B1E24CAC700BBC1D7 /* BusyAnt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusyAnt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				C4313A131E248E3B00BBC1D7 /* ArrayPractice.swift */,
 				C4313A151E24A60200BBC1D7 /* fillArray.swift */,
 				C4313A171E24B17100BBC1D7 /* setBoolArray.swift */,
+				C4313A1B1E24CAC700BBC1D7 /* BusyAnt.swift */,
 			);
 			path = Day6;
 			sourceTree = "<group>";
@@ -136,6 +139,7 @@
 				C4313A161E24A60200BBC1D7 /* fillArray.swift in Sources */,
 				C4313A141E248E3B00BBC1D7 /* ArrayPractice.swift in Sources */,
 				C4313A081E2473D200BBC1D7 /* main.swift in Sources */,
+				C4313A1C1E24CAC700BBC1D7 /* BusyAnt.swift in Sources */,
 				C4313A121E2474C900BBC1D7 /* InterestManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

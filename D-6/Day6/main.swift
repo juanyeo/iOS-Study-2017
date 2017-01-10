@@ -28,3 +28,6 @@ load3.printArray(array: load3.tempArray(lines: 5))
 
 let load4 = setBool()
 load4.printArray(array: load4.setBoolArray(lines: 7), newChar: "✾")
+
+let load5 = busyAnt()
+print(load5.antFunction(inputArray: [1, 1, 2, 2]))
