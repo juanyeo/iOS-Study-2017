@@ -25,3 +25,6 @@ load2.printArray(array: load2.tempArray(lines: 5))
 
 let load3 = plus5Array()
 load3.printArray(array: load3.tempArray(lines: 5))
+
+let load4 = setBool()
+load4.printArray(array: load4.setBoolArray(lines: 7), newChar: "✾")
