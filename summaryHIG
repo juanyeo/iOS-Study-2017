@@ -1,0 +1,63 @@
+<개요>
+디자인원칙: "기능중심", "중요한것강조","최소","통일성","표준","직접조작-> 즉각적,시각적결과","비유"
+IOS10의 새로운것:위젯,메세지기능확대,siri,알림확대
+필수인터페이스:Bars, Views, Controls
+<Interaction>
+3D터치:홈스크린의 3D터치, 3D터치->더상세한것,충분한버튼크기,할거면다해라,LivePhotos
+접근성:투명성줄이고,버튼은경계보여줄것,음성설명으로 드러나지않은 버튼설명
+오디오:다른앱,시스템의 기본설정과 호환가능하게
+인증:최대한간편하게,이유를명확히설명,로그인이필요할경우 display a brief -> friendly explation -> describe reason, benefit for requirement
+데이터입력:최대한도와줄것,최대한불러올것,입력힌트제공
+피드백:진동,화면피드백 동시에
+파일관리:[QuickLook],[document provider extension],[Document Picker Programming Guide]
+처음깔았을때:[Launch Screen], 튜토리얼은 skip할수있게,직접해보며배울수있게,설정은 처음에 하는게 아니라 원래부터 대다수 사람들에게 맞게 되어있는것
+제스쳐:Tap,Drag,Flick,Swipe,Pinch,Double tap,Touch and hold,Shake
+로딩: 동작중이라는 것을 밝힐것,로딩도중 Tip이나 애니메이션 제공할것
+Modality: 최소로, 필요할 때만
+Navigation: [Navigation Bars],[Tab Bars]
+허가요구:필요할때 이유를 명확히 설명
+문체: 쉽게, 유머는 되도록 사용자제
+Undo,Redo:Undo에 Shake gesture이용가능,처음에 확인메세지 보낼것
+<Features>
+멀티테스킹:1.SlideOver, 2.Split view 3.Picture in Picture, 멀티테스킹으로 인한 방해에 준비되어있어야 함
+알림: 1.응답이 없다고 같은 내용을 반복해서 보내지 않는다 2.특유의 소리를 이용할수있다 3.세부내용을 밝혀라 4.파괴적인 동작을 배제하라
+프린팅:프린트에 옵션을 더할 수 있다.
+Quick Look: 다양한 양식의 문서 preview가능
+Siri: -
+<시각디자인>
+애니메이션:사용자가 애니메이션을 옵션으로 선택할 수 있게
+Branding:앱 전체에 걸쳐 로고를 보이는 것을 지양
+색:interactive,noninteractive한 요소의 색을 구분하라, 컴퓨터에서Test한 것과 실제 앱에서 색깔이 다를 수 있으니 미리 확인, 색맹과 다른나라의 문화를 고려하라
+레이아웃:가로와 세로방향의 화면을 모두지원하고 방향변화시에도 내용을 유지한다, Landscape orientation일 경우 홈버튼의 좌우와 관계없이 작동되게한다, 모든 interactive요소에대해 44pt*44pt의 최소공간을 준다, 글자크기변화를 고려한다
+글씨:[Typograpy]에서 적절한 글씨크기를 제시하고 있음, 글꼴은표준을권장
+<그래픽>
+커스텀아이콘:기존에 제공되는 [System Icons]시스템아이콘이 있으며 필요에 따라 custom Icon을 만들 수 있다 사이즈는[Custom Icons]참고
+런치화면:text보단 이미지를 보여 인상을 남겨라
+<UIBars>
+Navigation Bars:상단에 있는 Bar로 너무 많은 Control들을 지양하고 풀 스크린 화면을 지원해야 될때는 사라질 수 있도록한다
+Search Bars: 구성요소 1.Place holder text 2.Place holder text의 기본문구(검색어 입력시 위로이동) 3.Clear button 4.Cancel button, [UISearchController],[UISearchBar]에서 Shortcut 제공에 대한 세부정보를 알수있다
+Status Bars:풀스크린 화면을 지원할 때를 제외하고는 대부분 드러낸다
+Tab Bars:하단에 약5가지의 앱 단위의 목차를 제시할수있다
+Tool Bars:하단에 action을 지시하는 버튼들이 모여있다
+<UIViews>
+Action Sheets:Specific style of alert,Always include Cancel Button,If destructive actions use red and display at Top,
+Activity Views: -
+Alerts:Generally use two-button alerts,button that cancels an alert's action should always be labeled Cancel and sometimes it should be able to used as way out of destructive action,Allow Home button to cancel alerts
+Collections: -
+ImageViews:Ensure Image's consistently size [UIImageView]
+Maps: There is expected pin colors
+Pages:[UIPageViewController]
+Popovers:Avoid displaying Popovers on iphones
+Scroll Views: -
+Split Views: -
+Tables:1.Plain style 2.Grouped Style, Standard table cell styles [UITableViewCell] [UITableViewCellStyleDefault] [UITableViewCellStyleSubtitle] [UITableViewCellStyleValue1] [UITableViewCellStyleValue2] +Customizing cells
+<UIControls>
+Buttons:[UIButton], Consider border,background only when necessary,If you want people to tap entire Detail Disclosure Button consider[UITableViewCellAccessoryType]instead, info Buttons [UIButtonTypeInfoLight],[UIButtonTypeInfodark],Add contact Buttons
+Edit Menus:hold or double-tap -> EditMenus,Default Options "Cut" "Copy" "Paste" "Select" "Select All" "Delete",Don't add edit options to a button
+Pickers:Avoid sswitching screens to show a picker,Use a table instead of a Picker for Large Value lists
+Refresh Content Controls:Make automatic content opdates occur periodically
+Segmented Controls:On iphone,Segmented Control should have five or fewer segments
+Sliders:Don't use a Slider to adjust audio Volume
+Steppers:Don't use Stepper when large Value changes are likely
+Switches:Use switches in table rows only,Avoid adding labels to describe the values of a switch
+Text Fields:single line,Need hint in a textfield,Clear button in the right end when appropriate,Use Secure text fields when appropriate
