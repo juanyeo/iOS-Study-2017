@@ -8,7 +8,7 @@
 
 import Foundation
 
-let load = busyAnt()
+let load = antFunction()
 print(load.antFunction(inputArray: [1,2,3,3,2,2,2,1]))
 
 
