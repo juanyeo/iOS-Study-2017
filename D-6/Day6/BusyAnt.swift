@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct busyAnt {
+struct antFunction {
     func antFunction(inputArray : [Int]) -> [Int] {
         var resultArray : Array<Int> = []
         var repeatTime = inputArray.count - 1
